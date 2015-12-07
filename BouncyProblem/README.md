@@ -1,8 +1,4 @@
-#Ripe
-Solutions to varied problems found here and there. 
-
-
-###Bouncy Problem
+#Bouncy Problem
 Euler 112
 __________
 
@@ -18,6 +14,6 @@ Surprisingly, bouncy numbers become more and more common and by the time we reac
 
 Find the least number for which the proportion of bouncy numbers is exactly 99%.
 
-** Getting 21791 instead of 21780 for p(0.9). Can't see any implementation errors. Using float gives slightly different results. **
+*Getting 21791 instead of 21780 for p(0.9). Can't see any implementation errors. Using float gives slightly different results.*
 
-** 1587097 is the answer **
+**1587097 is the answer**
