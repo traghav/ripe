@@ -17,3 +17,7 @@ Clearly there cannot be any bouncy numbers below one-hundred, but just over half
 Surprisingly, bouncy numbers become more and more common and by the time we reach 21780 the proportion of bouncy numbers is equal to 90%.
 
 Find the least number for which the proportion of bouncy numbers is exactly 99%.
+
+** Getting 21791 instead of 21780 for p(0.9). Can't see any implementation errors. Using float gives slightly different results.
+
+** 1587097 is the answer
