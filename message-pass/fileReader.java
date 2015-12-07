@@ -6,8 +6,8 @@ public class fileReader
 
       try {
             Scanner input = new Scanner(System.in);
-            System.out.print("Enter the file name with extention : ");
-            File file = new File(input.nextLine());
+            
+            File file = new File("Pass_the_message-test-input.txt");
 
             input = new Scanner(file);
 
