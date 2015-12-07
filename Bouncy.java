@@ -20,7 +20,7 @@ public class Bouncy
 		long i=1;
 		
 		float proba=0;
-		while((proba/i)<=0.9)
+		while((proba/i)<=.99)
 		{
 
 			if(bouncy.isBouncy(i)==false)
