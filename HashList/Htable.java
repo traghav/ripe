@@ -51,7 +51,7 @@ public class Htable
 			hashme[k]=l;
 		}
 		else
-		{	Link temp=hashme[k];
+		{	Htable.Link temp=hashme[k];
 			while(temp.getNext()!=null)
 			{	
 				temp=temp.getNext();
@@ -66,7 +66,65 @@ public class Htable
 	
 	}
 	public boolean lookup(int n, int k)
-	{
+	{	Htable.Link l=hashme[k];
+		if(l.getData()==n)
+			return true;
+		else
+		{
+			while(l.getNext()!=null)
+			{	if(l.getData()==n)
+					return true;
+				else
+					l=l.getNext();
+
+			}
+		}
 		return false;
+	}
+	public void delete(int n,int k)
+	{
+		if(lookup(n,k)==false)
+			System.out.println("What do I delete bro? Can't find it in the first place.");
+		else
+		{	Htable.Link l=hashme[k];
+			if(l.getData()==n)
+				hashme[k]=l.getNext();
+		else
+		{	Htable.Link prev=hashme[k];
+			while(l.getData()!=n)
+			{	if(l.getNext()==null)
+				{
+					System.out.println("couldn't find");
+					break;
+				}
+					
+				else
+				{	prev=l;
+					l=l.getNext();
+
+				}
+
+			}
+			prev.setNext(l.getNext());
+			System.out.println("Deleted");
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 }
