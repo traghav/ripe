@@ -67,6 +67,8 @@ public class Htable
 	}
 	public boolean lookup(int n, int k)
 	{	Htable.Link l=hashme[k];
+		if(l==null)
+			return false;
 		if(l.getData()==n)
 			return true;
 		else
